@@ -1,0 +1,130 @@
+# hades.models.Design file
+#  
+[name] Tester
+[components]
+hades.models.gates.Xnor2 i41 30900 3900 @N 1001 1.0E-8
+hades.models.gates.Xnor2 i40 30900 1500 @N 1001 1.0E-8
+hades.models.gates.Xor2 i39 30900 -900 @N 1001 1.0E-8
+hades.models.gates.Xor2 i38 30900 -3300 @N 1001 1.0E-8
+hades.models.gates.And2 i37 36900 -5700 @N 1001 1.0E-8
+hades.models.meta.Label i36 24900 12300 @N 1001 1 0 5 16 20 0.0 4 F\u0020:\u003d\u0020\u0028N\u003dO\u0029
+hades.models.meta.Label i35 24900 9900 @N 1001 1 0 5 16 20 0.0 4 L\u0020:\u003d\u0020\u0028N\u003dO\u0029
+hades.models.gates.Xnor2 i34 21000 11400 @N 1001 1.0E-8
+hades.models.gates.Xnor2 i33 21000 9000 @N 1001 1.0E-8
+hades.models.meta.Label i32 24900 7500 @N 1001 1 0 5 16 20 0.0 4 K\u0020:\u003d\u0020\u0028-3\u0029\u005e\u0028-4\u0029
+hades.models.gates.And2 i31 21000 6600 @N 1001 1.0E-8
+hades.models.meta.Label i30 24900 5100 @N 1001 1 0 5 16 20 0.0 4 Y\u0020:\u003d\u00201\u005e2
+hades.models.rtlib.io.IpinVector Flags 9600 6600 @N 1001 4 1111_B 1.0E-9 2
+hades.models.meta.Label i29 24900 2700 @N 1001 1 0 5 16 20 0.0 4 X\u0020:\u003d\u00201\u005e\u0028-2\u0029
+hades.models.meta.Label i28 24900 300 @N 1001 1 0 5 16 20 0.0 4 T\u0020:\u003d\u0020\u0028-1\u0029\u005e2
+hades.models.meta.Label i27 24900 -2100 @N 1001 1 0 5 16 20 0.0 4 P\u0020:\u003d\u0020\u0028-1\u0029\u005e\u0028-2\u0029
+hades.models.gates.And4 i26 36900 11100 @N 1001 1.0E-8
+hades.models.gates.InvSmall i25 15600 8700 @N 1001 5.0E-9
+hades.models.meta.Label i24 40800 4800 @N 1001 1 0 5 16 20 0.0 4 X\u005e\u0028-3\u0029\u005e\u00284\u003dZ\u0029
+hades.models.gates.And3 i23 36900 3900 @N 1001 1.0E-8
+hades.models.meta.Label i22 40800 2400 @N 1001 1 0 5 16 20 0.0 4 T\u005e3\u005e\u00284\u003dN\u0029
+hades.models.gates.And3 i21 36900 1500 @N 1001 1.0E-8
+hades.models.meta.Label i20 40800 0 @N 1001 1 0 5 16 20 0.0 4 T\u005e\u0028-3\u0029\u005e\u00284\u0021\u003dL\u0029
+hades.models.gates.And3 i19 36900 -900 @N 1001 1.0E-8
+hades.models.meta.Label i18 40800 -2400 @N 1001 1 0 5 16 20 0.0 4 P\u005e3\u005e\u00284\u0021\u003dC\u0029
+hades.models.meta.Label i17 40800 -4800 @N 1001 1 0 5 16 20 0.0 4 P\u005eK
+hades.models.gates.And2 i16 21000 4200 @N 1001 1.0E-8
+hades.models.gates.And2 i15 21000 1800 @N 1001 1.0E-8
+hades.models.gates.And2 i14 21000 -600 @N 1001 1.0E-8
+hades.models.gates.And2 i13 21000 -3000 @N 1001 1.0E-8
+hades.models.gates.And3 i12 36900 -3300 @N 1001 1.0E-8
+hades.models.meta.Label i11 8400 4800 @N 1001 1 0 5 18 25 0.0 4 1234
+hades.models.meta.Label i10 8400 8400 @N 1001 1 0 5 18 25 0.0 4 NOZC
+hades.models.gates.And4 i74 36900 8700 @N 1001 1.0E-8
+hades.models.io.LED i73 34800 8100 @N 1001 0
+hades.models.gates.And4 i72 36900 6300 @N 1001 1.0E-8
+hades.models.gates.Xnor2 i71 30900 13500 @N 1001 1.0E-8
+hades.models.io.LED i70 40800 17700 @N 1001 0
+hades.models.rtlib.io.IpinVector Condition 9600 3000 @N 1001 4 0100_B 1.0E-9 2
+hades.models.io.LED i69 40800 15300 @N 1001 0
+hades.models.io.LED i68 40800 12900 @N 1001 0
+hades.models.io.LED i67 40800 10500 @N 1001 0
+hades.models.io.LED i66 40800 8100 @N 1001 0
+hades.models.io.Opin Tests_true\u003f 57900 6300 @N 1001 5.0E-9
+hades.models.io.LED i65 40800 5700 @N 1001 0
+hades.models.io.LED i9 24900 3600 @N 1001 0
+hades.models.io.LED i64 40800 3300 @N 1001 0
+hades.models.gates.InvSmall i8 15600 7500 @N 1001 5.0E-9
+hades.models.io.LED i63 40800 900 @N 1001 0
+hades.models.io.LED i7 24900 1200 @N 1001 0
+hades.models.io.LED i62 40800 -1500 @N 1001 0
+hades.models.io.LED i6 24900 -1200 @N 1001 0
+hades.models.io.LED i61 40800 -3900 @N 1001 0
+hades.models.gates.InvSmall i5 15600 5700 @N 1001 5.0E-9
+hades.models.io.LED i60 24900 13200 @N 1001 0
+hades.models.gates.InvSmall i4 15600 4500 @N 1001 5.0E-9
+hades.models.gates.InvSmall i3 15600 3300 @N 1001 5.0E-9
+hades.models.gates.InvSmall i2 15600 2100 @N 1001 5.0E-9
+hades.models.rtlib.io.ExpanderVertical i1 11400 6600 @N 1001 4 1.0E-8
+hades.models.rtlib.io.ExpanderVertical i0 11400 3000 @N 1001 4 1.0E-8
+hades.models.io.LED i59 24900 10800 @N 1001 0
+hades.models.io.LED i58 24900 6000 @N 1001 0
+hades.models.io.LED i57 24900 8400 @N 1001 0
+hades.models.meta.Label i56 40800 16800 @N 1001 1 0 5 16 20 0.0 4 Y\u005e3\u005e\u00284\u003dO\u0029
+hades.models.gates.Or4 i54 48000 9600 @N 1001 1.0E-8
+hades.models.gates.Or4 i53 48000 600 @N 1001 1.0E-8
+hades.models.gates.Or4 i52 52800 5100 @N 1001 1.0E-8
+hades.models.gates.InvSmall i51 28500 10500 @N 1001 5.0E-9
+hades.models.gates.Or2 i50 30900 11100 @N 1001 1.0E-8
+hades.models.meta.Label i49 40800 14400 @N 1001 1 0 5 16 20 0.0 4 Y\u005e\u0028-3\u0029\u005e4\u005e\u0028-F\u0020\u007c\u0020Z\u0029
+hades.models.gates.And4 i48 36900 13500 @N 1001 1.0E-8
+hades.models.meta.Label i47 40800 12000 @N 1001 1 0 5 16 20 0.0 4 Y\u005eK\u005eF\u005e\u0028-Z\u0029
+hades.models.meta.Label i46 40800 9600 @N 1001 1 0 5 16 20 0.0 4 X\u005e3\u005e4\u005e\u0028Z\u0020\u007c\u0020-C\u0029
+hades.models.gates.Or2 i45 30900 8700 @N 1001 1.0E-8
+hades.models.gates.And3 i44 36900 15900 @N 1001 1.0E-8
+hades.models.meta.Label i43 40800 7200 @N 1001 1 0 5 16 20 0.0 4 X\u005e3\u005e\u0028-4\u0029\u005e\u0028-Z\u0029\u005eC
+hades.models.gates.And2 i42 30900 6300 @N 1001 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n39 3 i48 Y i54 C i69 A 2 2 40500 14700 48000 11100 2 40500 14700 40800 15300 1 40500 14700 
+hades.signals.SignalStdLogic1164 n38 3 i26 Y i54 B i68 A 2 2 40500 12300 48000 10500 2 40500 12300 40800 12900 1 40500 12300 
+hades.signals.SignalStdLogic1164 n37 4 i34 Y i26 C i51 A i60 A 3 2 24600 12600 36900 12600 2 24600 12600 28500 11100 2 24600 12600 24900 13200 1 24600 12600 
+hades.signals.SignalStdLogic1164 n36 5 i16 Y i26 A i48 A i58 A i44 A 4 2 24600 5400 36900 11400 2 24600 5400 36900 13800 2 24600 5400 24900 6000 2 24600 5400 36900 16500 1 24600 5400 
+hades.signals.SignalStdLogic1164 n35 2 i45 Y i74 D 1 2 34500 9900 36900 10800 0 
+hades.signals.SignalStdLogic1164 n34 2 i25 Y i45 B 1 2 17400 9300 30900 10500 0 
+hades.signals.SignalStdLogic1164 n33 3 i74 Y i67 A i54 A 2 2 40500 9900 40800 10500 2 40500 9900 48000 9900 1 40500 9900 
+hades.signals.SignalStdLogic1164 n32 3 i72 Y i52 C i66 A 2 2 40500 7500 52800 6600 2 40500 7500 40800 8100 1 40500 7500 
+hades.signals.SignalStdLogic1164 n31 3 i8 Y i42 A i26 D 2 2 17400 8100 30900 6900 2 17400 8100 36900 13200 1 17400 8100 
+hades.signals.SignalStdLogic1164 n30 2 i52 Y Tests_true? A 1 2 56400 6300 57900 6300 0 
+hades.signals.SignalStdLogic1164 n29 2 i54 Y i52 D 1 2 52800 7200 51600 10800 0 
+hades.signals.SignalStdLogic1164 n28 3 i23 Y i52 B i65 A 2 2 40500 5100 52800 6000 2 40500 5100 40800 5700 1 40500 5100 
+hades.signals.SignalStdLogic1164 n27 2 i53 Y i52 A 1 2 51600 1800 52800 5400 0 
+hades.signals.SignalStdLogic1164 n26 3 i21 Y i53 D i64 A 2 2 40500 2700 48000 2700 2 40500 2700 40800 3300 1 40500 2700 
+hades.signals.SignalStdLogic1164 n25 3 i19 Y i53 C i63 A 2 2 40500 300 48000 2100 2 40500 300 40800 900 1 40500 300 
+hades.signals.SignalStdLogic1164 n24 3 i12 Y i53 B i62 A 2 2 40500 -2100 48000 1500 2 40500 -2100 40800 -1500 1 40500 -2100 
+hades.signals.SignalStdLogic1164 n23 3 i37 Y i53 A i61 A 2 2 40500 -4500 48000 900 2 40500 -4500 40800 -3900 1 40500 -4500 
+hades.signals.SignalStdLogic1164 n22 5 i15 Y i23 A i9 A i72 A i74 A 4 2 24600 3000 36900 4500 2 24600 3000 24900 3600 2 24600 3000 36900 6600 2 24600 3000 36900 9000 1 24600 3000 
+hades.signals.SignalStdLogic1164 n21 2 i41 Y i23 C 1 2 34500 5100 36900 5700 0 
+hades.signals.SignalStdLogic1164 n20 2 i40 Y i21 C 1 2 34500 2700 36900 3300 0 
+hades.signals.SignalStdLogic1164 n9 3 i5 Y i31 B i72 C 2 2 17400 6300 21000 8400 2 17400 6300 36900 7800 1 17400 6300 
+hades.signals.SignalStdLogic1164 n8 5 i4 Y i31 A i19 B i23 B i48 B 4 2 17400 5100 21000 7200 2 17400 5100 36900 300 2 17400 5100 36900 5100 2 17400 5100 36900 14400 1 17400 5100 
+hades.signals.SignalStdLogic1164 n7 9 i0 Y0 i5 A i38 A i39 A i40 A i41 A i48 C i74 C i71 A 8 2 12600 5400 15600 6300 2 12600 5400 30900 -2700 2 12600 5400 30900 -300 2 12600 5400 30900 2100 2 12600 5400 30900 4500 2 12600 5400 36900 15000 2 12600 5400 36900 10200 2 12600 5400 30900 14100 1 12600 5400 
+hades.signals.SignalStdLogic1164 n6 7 i0 Y1 i4 A i12 B i21 B i72 B i74 B i44 B 6 2 12600 4800 15600 5100 2 12600 4800 36900 -2100 2 12600 4800 36900 2700 2 12600 4800 36900 7200 2 12600 4800 36900 9600 2 12600 4800 36900 17100 1 12600 4800 
+hades.signals.SignalStdLogic1164 n5 3 i3 Y i13 B i15 B 2 2 21000 -1200 17400 3900 2 17400 3900 21000 3600 1 17400 3900 
+hades.signals.SignalStdLogic1164 n4 3 i2 Y i13 A i14 A 2 2 17400 2700 21000 -2400 2 17400 2700 21000 0 1 17400 2700 
+hades.signals.SignalStdLogic1164 n3 4 i0 Y2 i3 A i14 B i16 B 3 2 15600 3900 12600 4200 2 12600 4200 21000 1200 2 12600 4200 21000 6000 1 12600 4200 
+hades.signals.SignalStdLogic1164 n2 4 i0 Y3 i2 A i15 A i16 A 3 2 12600 3600 15600 2700 2 12600 3600 21000 2400 2 12600 3600 21000 4800 1 12600 3600 
+hades.signals.SignalStdLogicVector n1 4 2 Flags Y i1 A 1 2 9600 6600 12000 6600 0 
+hades.signals.SignalStdLogicVector n0 4 2 Condition Y i0 A 1 2 9600 3000 12000 3000 0 
+hades.signals.SignalStdLogic1164 n19 2 i39 Y i19 C 1 2 34500 300 36900 900 0 
+hades.signals.SignalStdLogic1164 n18 3 i33 Y i39 B i59 A 2 2 24600 10200 30900 900 2 24600 10200 24900 10800 1 24600 10200 
+hades.signals.SignalStdLogic1164 n17 4 i14 Y i19 A i21 A i7 A 3 2 24600 600 36900 -300 2 24600 600 36900 2100 2 24600 600 24900 1200 1 24600 600 
+hades.signals.SignalStdLogic1164 n16 2 i38 Y i12 C 1 2 36900 -1500 34500 -2100 0 
+hades.signals.SignalStdLogic1164 n15 4 i1 Y0 i38 B i25 A i42 B 3 2 12600 9000 30900 -1500 2 12600 9000 15600 9300 2 12600 9000 30900 8100 1 12600 9000 
+hades.signals.SignalStdLogic1164 n14 4 i31 Y i37 B i26 B i57 A 3 2 24600 7800 36900 -3900 2 24600 7800 36900 12000 2 24600 7800 24900 8400 1 24600 7800 
+hades.signals.SignalStdLogic1164 n13 4 i13 Y i37 A i12 A i6 A 3 2 24600 -1800 36900 -5100 2 24600 -1800 36900 -2700 2 24600 -1800 24900 -1200 1 24600 -1800 
+hades.signals.SignalStdLogic1164 n44 3 i42 Y i72 D i73 A 2 2 34500 7500 36900 8400 2 34500 7500 34800 8100 1 34500 7500 
+hades.signals.SignalStdLogic1164 n12 4 i1 Y2 i34 B i33 B i71 B 3 2 12600 7800 21000 13200 2 12600 7800 21000 10800 2 12600 7800 30900 15300 1 12600 7800 
+hades.signals.SignalStdLogic1164 n43 2 i71 Y i44 C 1 2 34500 14700 36900 17700 0 
+hades.signals.SignalStdLogic1164 n11 5 i1 Y1 i41 B i8 A i45 A i50 B 4 2 12600 8400 30900 5700 2 12600 8400 15600 8100 2 12600 8400 30900 9300 2 12600 8400 30900 12900 1 12600 8400 
+hades.signals.SignalStdLogic1164 n42 3 i44 Y i70 A i54 D 2 2 40500 17100 40800 17700 2 40500 17100 48000 11700 1 40500 17100 
+hades.signals.SignalStdLogic1164 n10 4 i1 Y3 i33 A i34 A i40 B 3 2 12600 7200 21000 9600 2 12600 7200 21000 12000 2 12600 7200 30900 3300 1 12600 7200 
+hades.signals.SignalStdLogic1164 n41 2 i51 Y i50 A 1 2 30300 11100 30900 11700 0 
+hades.signals.SignalStdLogic1164 n40 2 i50 Y i48 D 1 2 34500 12300 36900 15600 0 
+[end signals]
+[end]

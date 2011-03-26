@@ -1,0 +1,67 @@
+# hades.models.Design file
+#  
+[name] PP_16BitLeftRotator
+[components]
+hades.models.rtlib.arith.RotateLeft rol4 36000 1200 @N 1001 16 4 0000110101000000_B 1.0E-8
+hades.models.io.Opin Carry 55800 18600 @N 1001 5.0E-9
+hades.models.rtlib.arith.RotateLeft rol2 27600 1200 @N 1001 16 2 0000000011010100_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft rol1 18600 1200 @N 1001 16 1 0000000000110101_B 1.0E-8
+hades.models.gates.InvSmall i9 11400 6600 @N 1001 5.0E-9
+hades.models.rtlib.logic.BitwiseOr i8 26400 7800 @N 1001 16 0000000011010100_B 1.0E-8
+hades.models.gates.Xor2 i18 50400 15600 @N 1001 1.0E-8
+hades.models.rtlib.logic.N1And i7 28200 4800 @N 1001 16 0000000000000000_B 1.0E-8
+hades.models.rtlib.logic.BitwiseOr i17 43200 7800 @N 1001 16 1101010000000000_B 1.0E-8
+hades.models.rtlib.logic.N1And i16 45000 4800 @N 1001 16 0000000000000000_B 1.0E-8
+hades.models.rtlib.logic.N1And i5 24600 4800 @N 1001 16 0000000011010100_B 1.0E-8
+hades.models.rtlib.io.IpinVectorLarge input_vector 19200 0 @N 1001 16 1000000000011010_B 1.0E-9 2
+hades.models.rtlib.logic.N1And i15 41400 4800 @N 1001 16 1101010000000000_B 1.0E-8
+hades.models.rtlib.logic.BitwiseOr i4 18000 7800 @N 1001 16 0000000000110101_B 1.0E-8
+hades.models.gates.InvSmall i14 11400 10200 @N 1001 5.0E-9
+hades.models.gates.InvSmall i3 11400 4800 @N 1001 5.0E-9
+hades.models.gates.InvSmall i13 11400 8400 @N 1001 5.0E-9
+hades.models.rtlib.logic.N1And i2 19800 4800 @N 1001 16 0000000000000000_B 1.0E-8
+hades.models.io.Opin Overflow 55800 16800 @N 1001 5.0E-9
+hades.models.rtlib.io.Expander Exp3 33600 13200 @N 1001 16 1.0E-8
+hades.models.rtlib.logic.N1And i1 16200 4800 @N 1001 16 0000000000110101_B 1.0E-8
+hades.models.rtlib.logic.BitwiseOr i12 34800 7800 @N 1001 16 0000000011010100_B 1.0E-8
+hades.models.rtlib.io.IpinVector rotation 9600 1800 @N 1001 4 1011_B 1.0E-9 2
+hades.models.rtlib.io.Expander Exp2 21000 -3000 @N 1001 16 1.0E-8
+hades.models.rtlib.logic.N1And i11 36600 4800 @N 1001 16 0000000011010100_B 1.0E-8
+hades.models.rtlib.io.Expander i0 10800 1800 @N 1001 4 1.0E-8
+hades.models.rtlib.logic.N1And i10 33000 4800 @N 1001 16 0000000000000000_B 1.0E-8
+hades.models.rtlib.io.OpinVectorLarge output_vector 42600 20400 @N 1001 16 1.0E-9 2
+hades.models.rtlib.arith.RotateLeft rol8 45000 1200 @N 1001 16 8 1101010000000000_B 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 16 2 i7 Y i8 B 1 2 30000 6600 28800 7800 0 
+hades.signals.SignalStdLogicVector n8 16 2 rol2 Y i5 B 1 2 27600 3000 27000 4800 0 
+hades.signals.SignalStdLogicVector n7 16 2 i2 Y i4 B 1 2 20400 7800 21600 6600 0 
+hades.signals.SignalStdLogicVector n6 16 3 i4 Y i7 B rol2 A 6 2 19800 9600 24000 10800 2 24000 10800 24000 0 2 24000 0 27600 0 2 27600 0 27600 1200 2 27600 0 30600 0 2 30600 0 30600 4800 1 27600 0 
+hades.signals.SignalStdLogicVector n5 16 4 input_vector Y rol1 A i2 B Exp2 A 4 2 19200 0 18600 1200 2 19200 0 22200 0 2 22200 0 22200 4800 2 19200 0 21600 -3000 1 19200 0 
+hades.signals.SignalStdLogicVector n19 16 3 i8 Y rol4 A i11 B 6 2 28200 9600 32400 10800 2 32400 10800 32400 0 2 32400 0 36000 0 2 36000 0 36000 1200 2 36000 0 39000 0 2 39000 0 39000 4800 1 36000 0 
+hades.signals.SignalStdLogic1164 n4 3 i0 Y1 i5 A i9 A 5 2 12600 3000 15000 4200 2 15000 4200 24600 4200 2 24600 4200 25800 4800 2 12600 3000 10200 5400 2 10200 5400 11400 7200 1 12600 3000 
+hades.signals.SignalStdLogic1164 n18 2 i13 Y i11 A 1 2 13200 9000 37800 4800 0 
+hades.signals.SignalStdLogicVector n3 16 2 i1 Y i4 A 1 2 18000 6600 19200 7800 0 
+hades.signals.SignalStdLogic1164 n17 2 i9 Y i7 A 1 2 13200 7200 29400 4800 0 
+hades.signals.SignalStdLogic1164 n2 3 i0 Y0 i1 A i3 A 3 2 13200 3000 17400 4800 2 13200 3000 10800 5400 2 10800 5400 11400 5400 1 13200 3000 
+hades.signals.SignalStdLogicVector n16 16 2 rol4 Y i10 B 1 2 36000 3000 35400 4800 0 
+hades.signals.SignalStdLogicVector n24_0 16 3 i17 Y Exp3 A output_vector A 6 2 45000 9600 45000 12000 2 45000 12000 34200 12000 2 34200 12000 34200 13200 2 34200 12000 32400 12000 2 32400 12000 32400 20400 2 32400 20400 42600 20400 1 34200 12000 
+hades.signals.SignalStdLogicVector n1 16 2 rol1 Y i1 B 1 2 18600 3000 18600 4800 0 
+hades.signals.SignalStdLogicVector n15 16 2 i11 Y i12 B 1 2 37200 7800 38400 6600 0 
+hades.signals.SignalStdLogicVector n0 4 2 rotation Y i0 A 1 2 9600 1800 11400 1800 0 
+hades.signals.SignalStdLogicVector n14 16 2 i10 Y i12 A 1 2 34800 6600 36000 7800 0 
+hades.signals.SignalStdLogic1164 n13 2 i3 Y i2 A 1 2 13200 5400 21000 4800 0 
+hades.signals.SignalStdLogic1164 n12 3 i0 Y3 i14 A i15 A 5 2 11400 3000 9000 5400 2 9000 5400 11400 10800 2 11400 3000 13200 4200 2 13200 4200 42000 3600 2 42000 3600 42600 4800 1 11400 3000 
+hades.signals.SignalStdLogic1164 n11 3 i0 Y2 i10 A i13 A 5 2 12000 3000 13200 3600 2 13200 3600 32400 3600 2 32400 3600 34200 4800 2 12000 3000 9600 5400 2 9600 5400 11400 9000 1 12000 3000 
+hades.signals.SignalStdLogicVector n10 16 2 i5 Y i8 A 1 2 26400 6600 27600 7800 0 
+hades.signals.SignalStdLogic1164 n29 2 Exp3 Y0 Carry A 2 2 43200 14400 43200 18600 2 43200 18600 55800 18600 0 
+hades.signals.SignalStdLogic1164 n28 2 i18 Y Overflow A 1 2 54000 16800 55800 16800 0 
+hades.signals.SignalStdLogicVector n20_0_0_0_1 16 3 i12 Y rol8 A i16 B 6 2 36600 9600 40800 10800 2 40800 10800 40800 0 2 40800 0 45000 0 2 45000 0 45000 1200 2 45000 0 47400 0 2 47400 0 47400 4800 1 45000 0 
+hades.signals.SignalStdLogic1164 n26 2 Exp2 Y15 i18 A 3 2 21600 -1800 21600 -600 2 21600 -600 50400 -600 2 50400 -600 50400 16200 0 
+hades.signals.SignalStdLogic1164 n24 2 Exp3 Y15 i18 B 2 2 34200 14400 34200 17400 2 34200 17400 50400 17400 0 
+hades.signals.SignalStdLogicVector n23 16 2 rol8 Y i15 B 1 2 45000 3000 43800 4800 0 
+hades.signals.SignalStdLogicVector n22 16 2 i16 Y i17 B 1 2 45600 7800 46800 6600 0 
+hades.signals.SignalStdLogicVector n21 16 2 i15 Y i17 A 1 2 43200 6600 44400 7800 0 
+hades.signals.SignalStdLogic1164 n20 2 i14 Y i16 A 1 2 13200 10800 46200 4800 0 
+[end signals]
+[end]

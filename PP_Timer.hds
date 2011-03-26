@@ -1,0 +1,10 @@
+# hades.models.Design file
+#  
+[name] Timer
+[components]
+hades.models.io.Ipin Kloksignaal 7200 1800 @N 1001  U
+hades.models.io.Opin Stap_B\u003f 22200 1800 @N 1001 5.0E-9
+[end components]
+[signals]
+[end signals]
+[end]
