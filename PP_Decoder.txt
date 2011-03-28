@@ -1,0 +1,45 @@
+
+f FBA98 5:              sr? sf? uf? f    alu-out? opc C+ cond A+ B+ b? notb?
+  00000 - => HALT       -   -   -   -    -        -   -  -    -  -  -  -
+  00001 - => LOADFLAG   0   1   0   *    -        -   -  -    -  -  -  -
+  0001- 0 => MATH       1   1   1   0000 1        *   0+ 0000 *  *  1  *
+        1 => MATH       1   1   1   0000 1        *   *  0000 *  -  0  0
+  001-- 0 => RAM        *   -   -   -    0        101 0+ 0000 *  *  1  *
+        1 => RAM        *   -   -   -    0        101 *  0000 *  -  0  0
+  01--- 0 => COND       1   0   0   -    1        *   0+ *    *  *  1  *
+        1 => COND       1   0   0   -    1        *   *  *    *  -  0  0
+  1---- - => LOADCONST  1   0   -   -    1        101 *  0000 *  -  -  -
+  
+  ..where:
+    (0|1)*  => definitive set
+    -       => do not care
+    *       => DECISION WORK
+  
+  Improvements to data flow nessecary for RAM operations:
+  * Bus from Registerbank data out A --> RAM (out of CPU)
+  * Switch 'ALU out?' for ALU: iff 0 then ALU output must be 00..
+  
+  RAM operations data flow:
+  * READ from RAM:
+    *  Load RAM address from registerbank or contant to bus data out B
+    *  Unset switch 'ALU-out?'
+    => Data will flow through 'registerbank in databus' to the register
+  * WRITE to RAM:
+    *  Load RAM address from registerbank or contant to bus data out B
+    *  Unset switch 'ALU-out?'
+    => Data will flow from registerbank data out A to RAM
+
+f sr?      "Save to register?"                 <= ~(LOADFLAG | (RAM ^ 9))
+f sf?      "Save to flags?"                    <= LOADFLAG | MATH
+f uf?      "ALU: Use and output flags?"        <= MATH
+f f        "Flags data"                        <= LOADFLAG ?^ 4310
+f alu-out? "ALU: Provide output or just 000+?" <= ~RAM
+f opc      "ALU: Opcode"                       <= (RAM | LOADCONST | (COND ^ ~6)) ?^ {101} ||
+                                                    (COND ^ 6) ?^ {001} || MATH ?^ {0}76
+f cond     "Tester: Condition"                 <= COND ?^ A987
+f C+       "Constant data"                     <= LOADCONST ?^ BA9876543210{0000} ||
+                                                    ((MATH | RAM | COND) ^ 5) ?^ {0000000000}043210
+f A+       "Reg: Address A"                    <= EDC
+f B+       "Reg: Address B"                    <= 210
+f b?       "Reg: Load B or just 000+?"         <= ~5
+f notb?    "Reg: Invert B?"                    <= ~5 ^ 4
