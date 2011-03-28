@@ -1,0 +1,92 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.meta.Label i21 16800 600 @N 1001 1 0 5 18 20 0.0 4 Opcode
+hades.models.Design Decoder 2700 9000 @N 1001 /home/kelley/workspace/P-P-CPU/PP_Decoder.hds
+hades.models.meta.Label i9 20400 1800 @N 1001 1 0 5 18 20 0.0 4 5
+hades.models.meta.Label i8 18600 1800 @N 1001 1 0 5 18 20 0.0 4 6
+hades.models.meta.Label i7 16800 1800 @N 1001 1 0 5 18 20 0.0 4 7
+hades.models.meta.Label i6 15000 1800 @N 1001 1 0 5 18 20 0.0 4 8
+hades.models.meta.Label i5 13200 1800 @N 1001 1 0 5 18 20 0.0 4 9
+hades.models.meta.Label i4 11400 1800 @N 1001 1 0 5 18 20 0.0 4 A
+hades.models.meta.Label i3 9300 1800 @N 1001 1 0 5 18 20 0.0 4 B
+hades.models.meta.Label i2 3600 1800 @N 1001 1 0 5 18 20 0.0 4 E\u0020D\u0020C
+hades.models.rtlib.io.Expander i1 4200 4800 @N 1001 3 1.0E-8
+hades.models.meta.Label i0 1200 1800 @N 1001 1 0 5 18 20 0.0 4 F
+hades.models.meta.Label i19 30000 600 @N 1001 1 0 5 18 20 0.0 4 C
+hades.models.meta.Label i18 27900 600 @N 1001 1 0 5 18 20 0.0 4 Z
+hades.models.io.Ipin F 2400 3000 @N 1001  0
+hades.models.rtlib.io.IpinVector Addr 8400 3000 @N 1001 3 001_B 1.0E-9 2
+hades.models.meta.Label i17 24000 600 @N 1001 1 0 5 18 20 0.0 4 O
+hades.models.meta.Label i16 22200 600 @N 1001 1 0 5 18 20 0.0 4 N
+hades.models.rtlib.io.MergeBits i15 1200 7500 @N 1001 16 1.0E-8
+hades.models.meta.Label i14 30000 1800 @N 1001 1 0 5 18 20 0.0 4 0
+hades.models.meta.Label i13 27900 1800 @N 1001 1 0 5 18 20 0.0 4 1
+hades.models.meta.Label i12 25800 1800 @N 1001 1 0 5 18 20 0.0 4 2
+hades.models.meta.Label i11 24000 1800 @N 1001 1 0 5 18 20 0.0 4 3
+hades.models.meta.Label i10 22200 1800 @N 1001 1 0 5 18 20 0.0 4 4
+hades.models.io.Ipin F12 31200 3000 @N 1001 null U
+hades.models.io.Ipin F11 29100 3000 @N 1001 null U
+hades.models.io.Ipin F10 27000 3000 @N 1001 null U
+hades.models.io.Ipin F9 25200 3000 @N 1001 null U
+hades.models.io.Ipin F8 23400 3000 @N 1001 null U
+hades.models.io.Ipin F7 21600 3000 @N 1001 null U
+hades.models.io.Ipin F6 19800 3000 @N 1001 null U
+hades.models.io.Ipin F5 18000 3000 @N 1001 null U
+hades.models.rtlib.io.OpinVectorLarge i39 9300 16800 @N 1001 16 1.0E-9 2
+hades.models.io.Ipin F4 16200 3000 @N 1001 null U
+hades.models.rtlib.io.OpinVector i38 13800 14400 @N 1001 3 1.0E-9 2
+hades.models.io.Ipin F3 14400 3000 @N 1001 null U
+hades.models.rtlib.io.OpinVector i37 16200 15600 @N 1001 4 1.0E-9 2
+hades.models.io.Ipin F2 12600 3000 @N 1001 null U
+hades.models.io.Opin i36 8700 14400 @N 1001 5.0E-9
+hades.models.io.Ipin F1 10500 3000 @N 1001 null U
+hades.models.io.Opin i35 10200 13800 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector i34 16200 13200 @N 1001 4 1.0E-9 2
+hades.models.io.Opin i33 10200 12600 @N 1001 5.0E-9
+hades.models.io.Opin i32 10200 11700 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector i31 16200 11400 @N 1001 3 1.0E-9 2
+hades.models.rtlib.io.OpinVector i30 16200 9900 @N 1001 3 1.0E-9 2
+hades.models.io.Opin i29 10200 10800 @N 1001 5.0E-9
+hades.models.io.Opin i28 10200 9600 @N 1001 5.0E-9
+hades.models.meta.Label i27 20400 4800 @N 1001 1 0 5 18 20 0.0 4 C\u003f
+hades.models.meta.Label i26 25800 4500 @N 1001 1 0 5 18 20 0.0 4 Source\u0020Addr__
+hades.models.meta.Label i25 18600 4500 @N 1001 1 0 5 18 20 0.0 4 A/M
+hades.models.meta.Label i24 13200 4500 @N 1001 1 0 5 18 20 0.0 4 R/W
+hades.models.meta.Label i23 3600 600 @N 1001 1 0 5 18 20 0.0 4 Dest\u0020/\u0020Reg
+hades.models.meta.Label i22 11400 900 @N 1001 1 0 5 18 20 0.0 4 Condition_________
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 F5 Y i15 A7 1 2 18000 3000 6600 7500 0 
+hades.signals.SignalStdLogic1164 n8 2 F4 Y i15 A8 1 2 6000 7500 16200 3000 0 
+hades.signals.SignalStdLogic1164 n7 2 F3 Y i15 A9 1 2 14400 3000 5400 7500 0 
+hades.signals.SignalStdLogic1164 n6 2 F2 Y i15 A10 1 2 4800 7500 12600 3000 0 
+hades.signals.SignalStdLogic1164 n5 2 F1 Y i15 A11 1 2 10500 3000 4200 7500 0 
+hades.signals.SignalStdLogic1164 n19 2 Decoder Save_to_flags? i29 A 1 2 7500 10800 10200 10800 0 
+hades.signals.SignalStdLogic1164 n4 2 i1 Y0 i15 A12 1 2 6000 6000 3600 7500 0 
+hades.signals.SignalStdLogic1164 n18 2 Decoder Save_to_register? i28 A 1 2 7500 9600 10200 9600 0 
+hades.signals.SignalStdLogic1164 n3 2 i1 Y1 i15 A13 1 2 5400 6000 3000 7500 0 
+hades.signals.SignalStdLogicVector n17 16 2 i15 Y Decoder Instruction 1 2 1800 8700 2700 9600 0 
+hades.signals.SignalStdLogic1164 n2 2 i1 Y2 i15 A14 1 2 4800 6000 2400 7500 0 
+hades.signals.SignalStdLogic1164 n16 2 F12 Y i15 A0 1 2 31200 3000 10800 7500 0 
+hades.signals.SignalStdLogic1164 n1 2 F Y i15 A15 1 2 2400 3000 1800 7500 0 
+hades.signals.SignalStdLogic1164 n15 2 F11 Y i15 A1 1 2 10200 7500 29100 3000 0 
+hades.signals.SignalStdLogicVector n0 3 2 Addr Y i1 A 1 2 8400 3000 4800 4800 0 
+hades.signals.SignalStdLogic1164 n14 2 F10 Y i15 A2 2 2 27000 3000 9600 7500 2 27000 3000 26400 3000 0 
+hades.signals.SignalStdLogic1164 n13 2 F9 Y i15 A3 1 2 9000 7500 25200 3000 0 
+hades.signals.SignalStdLogic1164 n12 2 F8 Y i15 A4 1 2 8400 7500 23400 3000 0 
+hades.signals.SignalStdLogic1164 n11 2 F7 Y i15 A5 2 2 21600 3000 7800 7500 2 21600 3000 21000 3000 0 
+hades.signals.SignalStdLogic1164 n10 2 F6 Y i15 A6 1 2 7200 7500 19800 3000 0 
+hades.signals.SignalStdLogicVector n29 16 2 Decoder Constant i39 A 1 2 7500 16200 9300 16800 0 
+hades.signals.SignalStdLogicVector n28 3 2 Decoder ALU:_Opcode i38 A 1 2 7500 15000 13800 14400 0 
+hades.signals.SignalStdLogicVector n27 4 2 Decoder Tester:_Condition i37 A 1 2 7500 15600 16200 15600 0 
+hades.signals.SignalStdLogic1164 n26 2 Decoder ALU:_Output? i36 A 1 2 7500 14400 8700 14400 0 
+hades.signals.SignalStdLogic1164 n25 2 Decoder Reg:_Invert_B? i35 A 1 2 7500 13800 10200 13800 0 
+hades.signals.SignalStdLogicVector n24 4 2 Decoder Flags i34 A 1 2 7500 13200 16200 13200 0 
+hades.signals.SignalStdLogic1164 n23 2 Decoder Reg:_load_B? i33 A 1 2 7500 12600 10200 12600 0 
+hades.signals.SignalStdLogic1164 n22 2 Decoder ALU:_Use_flags? i32 A 1 2 7500 12000 10200 11700 0 
+hades.signals.SignalStdLogicVector n21 3 2 Decoder Reg:_Address_B i31 A 1 2 7500 11400 16200 11400 0 
+hades.signals.SignalStdLogicVector n20 3 2 Decoder Reg:_Address_A i30 A 1 2 7500 10200 16200 9900 0 
+[end signals]
+[end]
