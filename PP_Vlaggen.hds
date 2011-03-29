@@ -3,13 +3,13 @@
 [name] Vlaggenbank
 [components]
 hades.models.rtlib.io.Expander i8 12600 -600 @N 1001 4 1.0E-8
-hades.models.flipflops.Dff i7 15600 8400 @N 1001 5.0E-9 4.0E-9 3.0E-9
 hades.models.rtlib.io.IpinVector Vlaggen 10200 1800 @N 1001 4 0111_B 1.0E-9 2
+hades.models.flipflops.Dff i7 15600 8400 @N 1001 5.0E-9 4.0E-9 3.0E-9
 hades.models.flipflops.Dff i6 15600 6000 @N 1001 5.0E-9 4.0E-9 3.0E-9
 hades.models.flipflops.Dff i5 15600 3600 @N 1001 5.0E-9 4.0E-9 3.0E-9
 hades.models.rtlib.io.MergeBits i1 19200 11400 @N 1001 4 1.0E-8
 hades.models.flipflops.Dff i0 15600 1200 @N 1001 5.0E-9 4.0E-9 3.0E-9
-hades.models.io.Ipin Lezen\u003f 6600 3000 @N 1001 null 0
+hades.models.io.Ipin Lezen\u003f 6600 3000 @N 1001  0
 hades.models.rtlib.io.OpinVector Vlaggen_output 24000 1800 @N 1001 4 1.0E-9 2
 [end components]
 [signals]
