@@ -1,0 +1,30 @@
+# hades.models.Design file
+#  
+[name] Vlaggenbank
+[components]
+hades.models.rtlib.io.Expander i8 12600 -600 @N 1001 4 1.0E-8
+hades.models.rtlib.io.IpinVector Vlaggen 10200 1800 @N 1001 4 0011_B 1.0E-9 2
+hades.models.flipflops.Dffr i5 15600 14400 @N 1001 5.0E-9 4.0E-9 3.0E-9
+hades.models.flipflops.Dffr i4 15600 9600 @N 1001 5.0E-9 4.0E-9 3.0E-9
+hades.models.flipflops.Dffr i3 15600 4800 @N 1001 5.0E-9 4.0E-9 3.0E-9
+hades.models.flipflops.Dffr i2 15600 0 @N 1001 5.0E-9 4.0E-9 3.0E-9
+hades.models.rtlib.io.MergeBits i1 19200 20400 @N 1001 4 1.0E-8
+hades.models.io.Ipin ResetOn1\u003e0 6600 4200 @N 1001  1
+hades.models.io.Ipin Lezen\u003f 6600 3000 @N 1001 null 0
+hades.models.rtlib.io.OpinVector Vlaggen_output 24000 1800 @N 1001 4 1.0E-9 2
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i8 Y0 i5 D 2 2 15000 600 15000 16200 2 15000 16200 15600 16200 0 
+hades.signals.SignalStdLogic1164 n8 2 i8 Y1 i4 D 2 2 14400 600 14400 11400 2 14400 11400 15600 11400 0 
+hades.signals.SignalStdLogic1164 n7 2 i4 Q i1 A1 2 2 21000 20400 21000 11400 2 21000 11400 19200 11400 0 
+hades.signals.SignalStdLogic1164 n6 2 i2 Q i1 A3 2 2 19800 1800 19800 20400 2 19800 1800 19200 1800 0 
+hades.signals.SignalStdLogic1164 n5 2 i8 Y2 i3 D 2 2 13800 600 13800 6600 2 13800 6600 15600 6600 0 
+hades.signals.SignalStdLogic1164 n4 2 i5 Q i1 A0 2 2 19200 16200 21600 16200 2 21600 16200 21600 20400 0 
+hades.signals.SignalStdLogic1164 n3 2 i3 Q i1 A2 2 2 19200 6600 20400 6600 2 20400 6600 20400 20400 0 
+hades.signals.SignalStdLogicVector n2 4 2 Vlaggen Y i8 A 4 2 10200 1800 11400 1800 2 11400 1800 11400 -1200 2 11400 -1200 13200 -1200 2 13200 -1200 13200 -600 0 
+hades.signals.SignalStdLogicVector n1 4 2 i1 Y Vlaggen_output A 4 2 19800 21600 19800 22200 2 19800 22200 22800 22200 2 22800 22200 22800 1800 2 22800 1800 24000 1800 0 
+hades.signals.SignalStdLogic1164 n0 2 i8 Y3 i2 D 2 2 13200 600 13200 1800 2 13200 1800 15600 1800 0 
+hades.signals.SignalStdLogic1164 n11 5 ResetOn1>0 Y i2 NR i3 NR i4 NR i5 NR 8 2 12600 4200 15600 4200 2 6600 4200 12600 4200 2 12600 4200 12600 9000 2 12600 9000 15600 9000 2 12600 9000 12600 13800 2 12600 13800 15600 13800 2 12600 13800 12600 18600 2 12600 18600 15600 18600 3 12600 13800 12600 9000 12600 4200 
+hades.signals.SignalStdLogic1164 n10 5 Lezen? Y i2 C i3 C i4 C i5 C 8 2 13200 3000 15600 3000 2 6600 3000 13200 3000 2 13200 3000 13200 7800 2 13200 7800 15600 7800 2 13200 7800 13200 12600 2 13200 12600 15600 12600 2 13200 12600 13200 17400 2 13200 17400 15600 17400 3 13200 12600 13200 3000 13200 7800 
+[end signals]
+[end]

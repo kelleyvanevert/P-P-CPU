@@ -1,0 +1,23 @@
+# hades.models.Design file
+#  
+[name] Timer
+[components]
+hades.models.io.Opin state\u003dSAVE 12000 12600 @N 1001 5.0E-9
+hades.models.io.Opin state\u003dDEC_EXEC 12000 11400 @N 1001 5.0E-9
+hades.models.rtlib.register.CounterRE time 7200 3600 @N 1001 2 11_B 1.0E-8
+hades.models.io.Ipin clock 4800 4800 @N 1001  0
+hades.models.io.Opin state\u003dHALTED 12000 9000 @N 1001 5.0E-9
+hades.models.rtlib.muxes.BitDecoder i0 8400 6900 @N 1001 2 1.0E-8
+hades.models.io.Ipin ResetOn1\u003e0 4800 6000 @N 1001  1
+hades.models.io.Opin state\u003dFETCH 12000 10200 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n6 2 i0 Y3 state=SAVE A 2 2 9000 8100 9000 12600 2 9000 12600 12000 12600 0 
+hades.signals.SignalStdLogic1164 n5 2 i0 Y2 state=DEC_EXEC A 2 2 12000 11400 9600 11400 2 9600 11400 9600 8100 0 
+hades.signals.SignalStdLogic1164 n4 2 i0 Y1 state=FETCH A 2 2 10200 8100 10200 10200 2 10200 10200 12000 10200 0 
+hades.signals.SignalStdLogic1164 n3 2 i0 Y0 state=HALTED A 2 2 10800 8100 10800 9000 2 10800 9000 12000 9000 0 
+hades.signals.SignalStdLogicVector n2 2 2 time Q i0 A 1 2 9000 6000 9000 6900 0 
+hades.signals.SignalStdLogic1164 n1 3 ResetOn1>0 Y time NR time ENA 5 2 4800 6000 6600 6000 2 6600 6000 6600 5400 2 6600 5400 7200 5400 2 6600 5400 6600 4200 2 6600 4200 7200 4200 1 6600 5400 
+hades.signals.SignalStdLogic1164 n0 2 clock Y time CLK 1 2 4800 4800 7200 4800 0 
+[end signals]
+[end]
